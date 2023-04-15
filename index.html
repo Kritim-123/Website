@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritim Bastola</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4bc7276001.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container"></div>
+        <nav>
+            <!-- <img src="CenterExperienceLogo.png" class = "logo">  -->
+            <ul id = "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>PROGRAMMER</p>
+            <h1> <span>Kritim Bastola</span> </h1>
+        </div>
+    </div>
+
+    <!-------about---->
+
+    <div id="About">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Kritim's photo.jpeg" alt=""> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class = "sub-title">About Me</h1>
+                    <p>
+                        Skilled computer science student skilled in Python and Java, with diverse interest in Computer Science looking for opportunities to apply my knowledge and gain experience from industrial experts through an internship.
+                    </p>
+                    <div class="tab-titles">
+                        <p Class = "tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p Class = "tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p Class = "tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Java</span><br>Programmer</li>
+                            <li><span>Web</span><br>Developer</li>
+                            <!-- <li><span>Machine</span><br>Learning</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id = "Experience">
+                        <ul>
+                            <li><span>09/22-Present</span><br>Computer Consultant</li>
+                            <li><span>09/22-12/22</span><br>AI4ALL</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id = "Education">
+                        <ul>
+                            <li><span>2020-2022</span><br>Trinity International College</li>
+                            <li><span>2022-2025</span><br>University of New Mexico</li>
+                            <!-- <li><span>Machine</span><br>Learning</li> -->
+                        </ul>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------services ------>
+
+    <div id="services">
+        <div id="conatiner">
+            <h1 class = "sub-title">My Services</h1>
+            <div class="serivices-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Stunning websites that captivate your audience. From responsive design to seamless user experience, I create visually appealing and user-friendly websites that boost your online presence. Contact me to discuss your web design needs and let's bring your vision to life!</p>
+                    <a href="">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Sleek and intuitive mobile apps that engage users. I specialize in creating visually appealing and user-friendly mobile apps that deliver an exceptional user experience. From wireframing to prototyping, I design apps that are easy to use and visually stunning. Contact me to discuss your app design requirements and let's create an app that stands out in the crowded app market!</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ 
+ <!------------------portfolio-----------> 
+ 
+ <div id="portfolio">
+    <div class="container">
+
+        <h1 class = "sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="website design.jpeg" alt="">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Made a portfolio website for myself, which you are currently seeing.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="app design.jpeg" alt="">
+                <div class="layer">
+                    <h3>App for University</h3>
+                    <p>It is currently under construction</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://www.linkedin.com/in/kritim-bastola-488563202/" class="btn" target="_blank">See More</a>
+        
+    </div>
+ </div>
+
+<!-------------------Contact----------->
+
+<div id="contact">
+    <div class="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> Kritimbastola2005@gmail.com</p>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/raged_rhombus/" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+                    <a href="https://www.linkedin.com/in/kritim-bastola-488563202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Kritim-123" target="_blank"><i class="fa-brands fa-github"></i></a>
+                
+                </div>
+
+                <a href="Kritim_Bastola_Resume.docx" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = "NAME" placeholder="Your Name" required>
+                    <input type="email" name = "EMAIL" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>Copyright  <span class = "parichaya">Kritim Bastola</span> </p>
+    </div>
+</div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-175px";
+            
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbydvFuqmCPakaOx9S3xlj2pX9LsochPp8akf3RYjEtvcrU5d2twvJAvLwPrEvmM1hCF/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            }, 5000)
+
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
