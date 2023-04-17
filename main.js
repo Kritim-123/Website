@@ -32,6 +32,7 @@ form.addEventListener("submit", (e) => {
   submit_text.classList.add("hidden");
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => {
+        msg.classList.toggle('hidden')
         msg.innerHTML = "Message sent successfully";
         setTimeout(function () {
           msg.innerHTML = "";

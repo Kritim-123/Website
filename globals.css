@@ -51,49 +51,49 @@ header nav {
 }
 
 #navbar {
-  width: min(500px, 100vw);
   align-items: center;
   justify-content: space-between;
   position: absolute;
   top: 0;
-  right: -300px;
+  right: -150%;
   height: 100vh;
   background-color: var(--pink);
   padding: 80px;
   font-size: 20px;
+  width: fit-content;
 }
 
-#navbar li:hover a{
+#navbar li:hover a {
   text-decoration: underline;
 }
 
-.sidemenu-open{
-  animation: open-sidemenu-animation .2s ease-in-out forwards;
+.sidemenu-open {
+  animation: open-sidemenu-animation 0.2s ease-in-out forwards;
 }
 
-@keyframes open-sidemenu-animation{
-  from{
-    right: -100%;
+@keyframes open-sidemenu-animation {
+  from {
+    right: -150%;
   }
-  to{
-    right: 0
-  }
-}
-
-.sidemenu-close{
-  animation: close-sidemenu-animation .2s ease-in-out forwards;
-}
-
-@keyframes close-sidemenu-animation{
-  from{
+  to {
     right: 0;
   }
-  to{
-    right: -100%
+}
+
+.sidemenu-close {
+  animation: close-sidemenu-animation 0.2s ease-in-out forwards;
+}
+
+@keyframes close-sidemenu-animation {
+  from {
+    right: 0;
+  }
+  to {
+    right: -150%;
   }
 }
 
-#navbar li{
+#navbar li {
   margin-block: 20px;
 }
 
@@ -362,7 +362,7 @@ section {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .lds-ring div {
@@ -482,10 +482,11 @@ footer {
     height: fit-content;
     background-color: transparent;
     padding: 0px;
-    font-size:medium;
+    font-size: medium;
+    width: min(500px, 100vw);
   }
 
-  #navbar li{
+  #navbar li {
     margin-block: 0px;
   }
 
