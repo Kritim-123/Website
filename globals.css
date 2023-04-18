@@ -29,7 +29,6 @@ body {
   color: var(--on-primary);
   max-width: 1600px;
   width: 100%;
-  overflow-x: hidden;
 }
 
 a {
