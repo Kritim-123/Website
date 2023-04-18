@@ -14,13 +14,18 @@
     <link rel="icon" href="images/profilepic.jpeg" />
     <title>Kritim Bastola | CS Student</title>
     <link rel="stylesheet" href="globals.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="theme.js" defer></script>
     <script
       src="https://kit.fontawesome.com/4bc7276001.js"
       crossorigin="anonymous"
     ></script>
     <script src="main.js" defer></script>
   </head>
-  <body>
+  <body onload="onLoad()" data-theme="dark">
     <header>
       <nav>
         <ul id="navbar">
@@ -41,6 +46,16 @@
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </button>
       </nav>
+      <!-- Theme toggle button  -->
+      <div class="toggleBtn" onchange="toggleTheme()">
+        <label class="switch">
+          <input id="themeCheckbox" type="checkbox" />
+          <span class="slider round">
+            <span class="material-symbols-outlined"> dark_mode </span>
+            <span class="material-symbols-outlined"> light_mode </span>
+          </span>
+        </label>
+      </div>
     </header>
     <main>
       <section id="about">

@@ -1,10 +1,3 @@
-if (navigator.userAgent.match(/webOS/i)) {
-  const overlays = document.getElementsByClassName("experience-card-overlay");
-  for (overlay of overlays) {
-    overlay.classList.add("top-0");
-  }
-}
-
 // Handling navbar on small screen
 var sidemenu = document.getElementById("navbar");
 
