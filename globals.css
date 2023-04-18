@@ -57,7 +57,7 @@ header nav {
 #navbar {
   align-items: center;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -150%;
   height: 100vh;
