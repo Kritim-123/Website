@@ -278,6 +278,11 @@ section {
   cursor: pointer;
 }
 
+.card.experience-card img{
+  width: 100%;
+  height: 100%;
+}
+
 .service-card {
   background-color: var(--grey);
   padding: 40px 20px;
