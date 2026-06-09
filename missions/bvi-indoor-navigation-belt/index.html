@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Case study for Kritim Bastola's BVI Indoor Navigation Belt, a wearable haptic obstacle-detection prototype." />
+    <link rel="icon" href="../../images/profilepic.jpeg" />
+    <title>BVI Indoor Navigation Belt | Raged Lab</title>
+    <link rel="stylesheet" href="../../globals.css" />
+    <script src="https://kit.fontawesome.com/4bc7276001.js" crossorigin="anonymous"></script>
+    <script src="../../main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="Raged Lab home"><span>Raged</span><span>Lab</span></a>
+      <nav aria-label="Main navigation">
+        <button class="menu-btn" type="button" aria-label="Open navigation"><i class="fa-solid fa-bars" onclick="openmenu()"></i></button>
+        <ul id="navbar">
+          <li class="close-btn"><button class="menu-btn" type="button" aria-label="Close navigation"><i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i></button></li>
+          <li><a href="../../index.html" onclick="closemenu()">Home</a></li>
+          <li><a class="active" href="../" onclick="closemenu()">Missions</a></li>
+          <li><a href="../../research/" onclick="closemenu()">Research</a></li>
+          <li><a href="../../observatory/" onclick="closemenu()">Observatory</a></li>
+          <li><a href="../../about/" onclick="closemenu()">About</a></li>
+          <li><a href="../../contact/" onclick="closemenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Mission / Accessibility / Embedded Systems / HCI</p>
+        <h1>BVI Indoor Navigation Belt</h1>
+        <p>
+          A wearable haptic obstacle-detection belt for blind and visually
+          impaired people. The mission demonstrates a complete loop:
+          environmental signal -> embedded processing -> tactile action.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="../">Back to Missions</a>
+          <a class="button" href="../../contact/">Discuss Collaboration</a>
+        </div>
+      </section>
+
+      <section class="section-block case-grid">
+        <article class="article-panel">
+          <section class="article-section">
+            <p class="eyebrow">Problem</p>
+            <h2>Indoor navigation needs fast, private, body-level feedback.</h2>
+            <p>
+              Blind and visually impaired people often need local obstacle
+              awareness in indoor spaces where GPS is not useful. The prototype
+              explores whether low-cost sensing and haptic feedback can provide
+              directional awareness without requiring visual attention.
+            </p>
+          </section>
+
+          <section class="article-section">
+            <p class="eyebrow">Design Question</p>
+            <h2>Can obstacle direction become intuitive waist feedback?</h2>
+            <p>
+              The design maps left, center, and right obstacle signals to
+              vibration groups around the waist. The core question is whether a
+              user can quickly understand where an obstacle is through tactile
+              cues instead of audio or visual alerts.
+            </p>
+          </section>
+
+          <section class="article-section">
+            <p class="eyebrow">Prototype Architecture</p>
+            <h2>Three sensors, one controller, six vibration motors.</h2>
+            <ul>
+              <li>Three Time-of-Flight sensors detect left, center, and right obstacle distance.</li>
+              <li>Arduino processes sensor readings and threshold logic.</li>
+              <li>MOSFET motor driver board switches vibration motors safely.</li>
+              <li>Six vibration motors are organized into left and right waist motor groups.</li>
+              <li>Left obstacles trigger left vibration; right obstacles trigger right vibration.</li>
+              <li>Center obstacles trigger vibration on both sides.</li>
+            </ul>
+          </section>
+
+          <section class="article-section">
+            <p class="eyebrow">Interaction Logic</p>
+            <h2>The signal becomes location-specific haptic action.</h2>
+            <p>
+              The prototype translates sensor distance readings into simple
+              haptic feedback. The value is not only the hardware, but the
+              design loop: sense the world, interpret the signal, and respond
+              through a body-centered interface.
+            </p>
+          </section>
+
+          <section class="article-section">
+            <p class="eyebrow">Testing</p>
+            <h2>Early prototype testing focused on the feedback loop.</h2>
+            <p>
+              The first milestone is proof that the sensing-to-vibration
+              pipeline works consistently. Future testing should include
+              enclosure stability, comfort, wire routing, and formal evaluation
+              with BVI participants.
+            </p>
+          </section>
+
+          <section class="article-section">
+            <p class="eyebrow">Limitations</p>
+            <h2>The prototype is functional, but not yet field-ready.</h2>
+            <ul>
+              <li>Current wiring and motor placement need better physical integration.</li>
+              <li>The system needs a 3D-printed enclosure and stable motor pockets.</li>
+              <li>Distance thresholds should become adjustable for different spaces and users.</li>
+              <li>Human-subject testing must be planned carefully and ethically.</li>
+            </ul>
+          </section>
+
+          <section class="article-section">
+            <p class="eyebrow">Future Work</p>
+            <h2>From prototype to usable assistive system.</h2>
+            <ul>
+              <li>3D-printed enclosure.</li>
+              <li>Rechargeable battery system.</li>
+              <li>Better wire routing.</li>
+              <li>Stable motor pockets.</li>
+              <li>Formal testing with BVI participants.</li>
+              <li>Adjustable distance threshold.</li>
+            </ul>
+          </section>
+        </article>
+
+        <aside class="side-rail">
+          <div class="rail-card">
+            <p class="card-kicker">Tech Stack</p>
+            <ul>
+              <li>Arduino</li>
+              <li>Time-of-Flight sensors</li>
+              <li>MOSFET motor driver</li>
+              <li>Vibration motors</li>
+              <li>Embedded interaction logic</li>
+            </ul>
+          </div>
+          <div class="rail-card">
+            <p class="card-kicker">Signal Loop</p>
+            <p>Obstacle distance -> sensor reading -> threshold logic -> left/right/both vibration.</p>
+          </div>
+          <div class="rail-card">
+            <p class="card-kicker">Mission Status</p>
+            <p>Prototype complete enough to demonstrate the sensing-to-haptic-feedback loop; future work should focus on usability and testing.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Raged Lab / BVI Indoor Navigation Belt</p>
+      <p><a href="../">Back to missions</a></p>
+    </footer>
+  </body>
+</html>

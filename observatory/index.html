@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Observatory: Kritim Bastola's personal intellectual log for books, films, and ideas." />
+    <link rel="icon" href="../images/profilepic.jpeg" />
+    <title>Observatory | Raged Lab</title>
+    <link rel="stylesheet" href="../globals.css" />
+    <script src="https://kit.fontawesome.com/4bc7276001.js" crossorigin="anonymous"></script>
+    <script src="../main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Raged Lab home"><span>Raged</span><span>Lab</span></a>
+      <nav aria-label="Main navigation">
+        <button class="menu-btn" type="button" aria-label="Open navigation"><i class="fa-solid fa-bars" onclick="openmenu()"></i></button>
+        <ul id="navbar">
+          <li class="close-btn"><button class="menu-btn" type="button" aria-label="Close navigation"><i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i></button></li>
+          <li><a href="../index.html" onclick="closemenu()">Home</a></li>
+          <li><a href="../missions/" onclick="closemenu()">Missions</a></li>
+          <li><a href="../research/" onclick="closemenu()">Research</a></li>
+          <li><a class="active" href="./" onclick="closemenu()">Observatory</a></li>
+          <li><a href="../about/" onclick="closemenu()">About</a></li>
+          <li><a href="../contact/" onclick="closemenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">The Observatory</p>
+        <h1>Books, films, and ideas as constellations.</h1>
+        <p>
+          A placeholder for a future living intellectual log. The goal is to
+          make the site feel alive: not just projects, but the signals that
+          shape the projects.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <div class="observatory-grid">
+          <article class="card star-card">
+            <p class="card-kicker">Books</p>
+            <h2>Books I am Reading</h2>
+            <p>
+              Short notes, quotes, and ideas from books about technology,
+              society, consciousness, AI, space, and human systems.
+            </p>
+          </article>
+          <article class="card star-card">
+            <p class="card-kicker">Films</p>
+            <h2>Films I Watched</h2>
+            <p>
+              A future Letterboxd-connected or manually updated film log with
+              short reflections on worlds, machines, futures, and people.
+            </p>
+          </article>
+          <article class="card star-card">
+            <p class="card-kicker">Ideas</p>
+            <h2>Ideas I am Exploring</h2>
+            <p>
+              Space, robotics, quantum ideas, AI, consciousness, Nepal,
+              accessibility, and technology in society.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Raged Lab / Observatory</p>
+      <p><a href="../index.html">Return home</a></p>
+    </footer>
+  </body>
+</html>

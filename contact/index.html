@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Kritim Bastola for research, robotics, AI, accessibility, internships, and collaboration." />
+    <link rel="icon" href="../images/profilepic.jpeg" />
+    <title>Contact | Raged Lab</title>
+    <link rel="stylesheet" href="../globals.css" />
+    <script src="https://kit.fontawesome.com/4bc7276001.js" crossorigin="anonymous"></script>
+    <script src="../main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Raged Lab home"><span>Raged</span><span>Lab</span></a>
+      <nav aria-label="Main navigation">
+        <button class="menu-btn" type="button" aria-label="Open navigation"><i class="fa-solid fa-bars" onclick="openmenu()"></i></button>
+        <ul id="navbar">
+          <li class="close-btn"><button class="menu-btn" type="button" aria-label="Close navigation"><i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i></button></li>
+          <li><a href="../index.html" onclick="closemenu()">Home</a></li>
+          <li><a href="../missions/" onclick="closemenu()">Missions</a></li>
+          <li><a href="../research/" onclick="closemenu()">Research</a></li>
+          <li><a href="../observatory/" onclick="closemenu()">Observatory</a></li>
+          <li><a href="../about/" onclick="closemenu()">About</a></li>
+          <li><a class="active" href="./" onclick="closemenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-cta">
+        <div class="section-heading">
+          <p class="eyebrow">Open Channel</p>
+          <h1>Send a signal.</h1>
+          <p>
+            Reach out for research collaboration, robotics and AI projects,
+            accessibility technology, internships, or systems work where
+            software meets the physical world.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="mailto:kbastola1@unm.edu">kbastola1@unm.edu</a>
+            <a class="button" href="https://github.com/Kritim-123?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button" href="https://www.linkedin.com/in/kritim-bastola-488563202/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-red" href="../Kritim_Bastola_Resume.pdf" download>Resume</a>
+          </div>
+        </div>
+
+        <form class="contact-form" name="submit-to-google-sheet">
+          <input class="contact-input" type="text" name="NAME" placeholder="Your name" required />
+          <input class="contact-input" type="email" name="EMAIL" placeholder="Your email" required />
+          <textarea class="contact-input" name="Message" rows="8" placeholder="Your message"></textarea>
+          <button type="submit" class="button button-primary">
+            <span class="submit-txt">Send Signal</span>
+            <span id="loader" class="loader" aria-hidden="true"></span>
+          </button>
+          <span id="msg" class="hidden"></span>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Raged Lab / Contact</p>
+      <p>Turning signals into systems.</p>
+    </footer>
+  </body>
+</html>

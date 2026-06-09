@@ -3,270 +3,303 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Kritim Bastola is a computer science student skilled in Python and Java, with diverse
-    interest in Computer Science looking for opportunities to apply my
-    knowledge and gain experience from industrial experts through an
-    internship."
+      content="Raged Lab is the research-lab portfolio of Kritim Bastola, a UNM Master's student building systems across robotics, AI, accessibility, research software, and human-centered technology."
     />
     <link rel="icon" href="images/profilepic.jpeg" />
-    <title>Kritim Bastola | CS Student</title>
+    <title>Raged Lab | Turning signals into systems</title>
     <link rel="stylesheet" href="globals.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <script src="theme.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/4bc7276001.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/4bc7276001.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
   </head>
-  <body onload="onLoad()" data-theme="dark">
-    <header>
-      <nav>
-        <ul id="navbar">
-          <li class="close-btn">
-            <button class="menu-btn">
-              <i
-                class="fa-sharp fa-regular fa-circle-xmark"
-                onclick="closemenu()"
-              ></i>
-            </button>
-          </li>
-          <li><a href="">Home</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#experience">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="menu-btn">
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Raged Lab home">
+        <span>Raged</span>
+        <span>Lab</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <button class="menu-btn" type="button" aria-label="Open navigation">
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </button>
+        <ul id="navbar">
+          <li class="close-btn">
+            <button class="menu-btn" type="button" aria-label="Close navigation">
+              <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </button>
+          </li>
+          <li><a class="active" href="index.html" onclick="closemenu()">Home</a></li>
+          <li><a href="missions/" onclick="closemenu()">Missions</a></li>
+          <li><a href="research/" onclick="closemenu()">Research</a></li>
+          <li><a href="observatory/" onclick="closemenu()">Observatory</a></li>
+          <li><a href="about/" onclick="closemenu()">About</a></li>
+          <li><a href="contact/" onclick="closemenu()">Contact</a></li>
+        </ul>
       </nav>
-      <!-- Theme toggle button  -->
-      <div class="toggleBtn" onchange="toggleTheme()">
-        <label class="switch">
-          <input id="themeCheckbox" type="checkbox" />
-          <span class="slider round">
-            <span class="material-symbols-outlined"> dark_mode </span>
-            <span class="material-symbols-outlined"> light_mode </span>
-          </span>
-        </label>
-      </div>
     </header>
+
     <main>
-      <section id="about">
-        <aside class="profile-pic">
-          <img src="images/profilepic.jpeg" alt="kritim's photo" />
-        </aside>
-        <aside>
-          <div class="info">
-            <div class="title">
-              <h1>Kritim Bastola</h1>
-              <h2>An experienced Programmer</h2>
-            </div>
-            <p class="description">
-              Computer science student skilled in Python and Java, with diverse
-              interest in Computer Science looking for opportunities to apply my
-              knowledge and gain experience from industrial experts through an
-              internship.
-            </p>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Raged Lab / Signal -> Intelligence -> Action</p>
+          <h1>I build systems that sense the world and respond intelligently.</h1>
+          <p class="lede">
+            I am Kritim Bastola, a Master's student in Computer Science at the
+            University of New Mexico, originally from Nepal. I work at the
+            intersection of research, software, robotics, accessibility, and
+            human-centered technology.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="missions/">View Missions</a>
+            <a class="button" href="research/">Read Research Log</a>
+            <a class="button" href="https://github.com/Kritim-123?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-red" href="Kritim_Bastola_Resume.pdf" download>Resume</a>
           </div>
-          <div>
-            <div class="tab-titles">
-              <p
-                class="tab-links active-link"
-                onclick="opentab(event, 'Skills')"
-              >
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab(event,'Experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab(event, 'Education')">
-                Education
-              </p>
-            </div>
-            <div class="tab-contents active-tab" id="Skills">
-              <ul>
-                <li><span>Java</span><br />Programmer</li>
-                <li><span>Web</span><br />Developer</li>
-              </ul>
-            </div>
+        </div>
 
-            <div class="tab-contents" id="Experience">
-              <ul>
-                <li><span>09/22-Present</span><br />Computer Consultant</li>
-                <li><span>09/22-12/22</span><br />AI4ALL</li>
-                <li><span>04/23 - Present</span><br />Software Developer For NM-Bio Park</li>
-              </ul>
+        <aside class="mission-console" aria-label="Current mission console">
+          <div class="portrait-frame">
+            <img src="images/profilepic.jpeg" alt="Portrait of Kritim Bastola" />
+          </div>
+          <div class="console-readout">
+            <div class="readout-row">
+              <span>Callsign</span>
+              <span>Kritim Bastola</span>
             </div>
-
-            <div class="tab-contents" id="Education">
-              <ul>
-                <li>
-                  <span>2020-2022</span><br />Trinity International College
-                </li>
-                <li><span>2022-2025</span><br />University of New Mexico</li>
-              </ul>
+            <div class="readout-row">
+              <span>Role</span>
+              <span>Research Assistant, UNM College of Nursing</span>
+            </div>
+            <div class="readout-row">
+              <span>Vector</span>
+              <span>Robotics / AI / Accessibility / Space Systems</span>
             </div>
           </div>
         </aside>
       </section>
-      <section id="service">
-        <h2 class="section-title">My Services</h2>
-        <div class="card-wrapper">
-          <div class="card service-card">
-            <i class="icon fa-solid fa-code"></i>
-            <h3>Web Design</h3>
-            <p class="description">
-              Stunning websites that captivate your audience. From responsive
-              design to seamless user experience, I create visually appealing
-              and user-friendly websites that boost your online presence.
-              Contact me to discuss your web design needs and let's bring your
-              vision to life!
-            </p>
+
+      <section class="section-block two-column">
+        <div class="status-panel">
+          <p class="eyebrow">Current Status</p>
+          <h2>Researcher-builder in orbit.</h2>
+          <div class="status-grid">
+            <article>
+              <span>Current Role</span>
+              <strong>Research Assistant, UNM College of Nursing</strong>
+            </article>
+            <article>
+              <span>Education</span>
+              <strong>M.S. Computer Science, University of New Mexico</strong>
+            </article>
+            <article>
+              <span>Origin</span>
+              <strong>Nepal -> New Mexico</strong>
+            </article>
+            <article>
+              <span>Building</span>
+              <strong>Intelligent systems that connect software with the physical world</strong>
+            </article>
           </div>
-          <div class="card service-card">
-            <i class="icon fa-brands fa-app-store"></i>
-            <h3>App Design</h3>
-            <p class="description">
-              Sleek and intuitive mobile apps that engage users. I specialize in
-              creating visually appealing and user-friendly mobile apps that
-              deliver an exceptional user experience. From wireframing to
-              prototyping, I design apps that are easy to use and visually
-              stunning. Contact me to discuss your app design requirements and
-              let's create an app that stands out in the crowded app market!
-            </p>
-          </div>
+        </div>
+
+        <div class="signal-feed">
+          <p class="eyebrow">Signal Feed</p>
+          <h2>Live threads from the lab.</h2>
+          <ul class="feed-list">
+            <li>[HRV DATA] collecting participant heartbeat signals</li>
+            <li>[HAPTICS] obstacle detection belt prototype</li>
+            <li>[AI AGENTS] support triage automation</li>
+            <li>[ANIMAL AUDIO] dog-human communication MVP</li>
+            <li>[ROBOTICS] humanoid + autonomous systems research</li>
+            <li>[CULTURE] books, films, ideas, philosophy</li>
+          </ul>
         </div>
       </section>
-      <section id="experience">
-        <h2 class="section-title">Projects</h2>
-        <div class="card-wrapper">
-          <div class="card experience-card">
-            <img src="images/website design.jpeg" />
-            <div class="experience-card-overlay">
-              <div>
-                <h3>Portfolio Website</h3>
-                <p>
-                  Made a Portfolio website with the help of HTML 
-                  ,CSS and JavaScript which you are seeing right now.
-                </p>
-                <a href="https://github.com/Kritim-123/Website" target="_blank"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="card experience-card">
-            <img src="images/Qt-Designer-GUI.webp" />
-            <div class="experience-card-overlay">
-              <div>
-                <h3>Extension Development for NM-BIO Park</h3>
-                <p>Software Development where I am creating 9 extensions for NM-BIO Park.
-                  I am using python, pyqt5 & and Qt-Creator.
-                </p>
-                <a href="https://github.com/Kritim-123/QGIS-Extension" target="_blank"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="card experience-card">
-            <img src="images/scheduling Website.jpeg" />
-            <div class="experience-card-overlay">
-              <div>
-                <h3>Scheduling Website</h3>
-                <p>This is a django python-mysql based scheduleing application simulator, 
-                  which will eventually expand into a website with HTML5, CSS3 and JS on the frontend.</p>
-                <a href="https://github.com/Scheduler-UNM/SchedulerWebsite" target="_blank"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Mission Map</p>
+          <h2>Major systems connected by one pattern: sense, reason, act.</h2>
+          <p>
+            Raged Lab is organized around missions instead of a standard
+            project grid. Each mission explores a signal: biological,
+            environmental, audio, support-workflow, or robotic.
+          </p>
         </div>
-        <a
-          href="https://www.linkedin.com/in/kritim-bastola-488563202/"
-          target="_blank"
-          class="button"
-        >
-          See More
-        </a>
+        <div class="mission-map" aria-label="Project constellation">
+          <a class="orbit-node node-one" href="missions/bvi-indoor-navigation-belt/">
+            <span>Accessibility</span>
+            <strong>BVI Navigation Belt</strong>
+          </a>
+          <a class="orbit-node node-two" href="missions/">
+            <span>AI / Audio</span>
+            <strong>DogBridge</strong>
+          </a>
+          <a class="orbit-node node-three" href="missions/">
+            <span>AI Agents</span>
+            <strong>Support Triage</strong>
+          </a>
+          <a class="orbit-node node-four" href="missions/">
+            <span>Robotics</span>
+            <strong>Autonomous Systems</strong>
+          </a>
+        </div>
       </section>
-      <section id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-content-wrapper">
-          <aside class="contact-info">
-            <h3>Reach Out at</h3>
-            <p class="email">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Kritimbastola2005@gmail.com</span>
-            </p>
 
-            <div class="social-icons">
-              <a href="https://www.instagram.com/raged_rhombus/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/kritim-bastola-488563202/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/Kritim-123" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-
-            <a href="Kritim_Bastola_Resume.pdf" download class="button"
-              >Download Resume</a
-            >
-          </aside>
-          <aside>
-            <form class="contact-form" name="submit-to-google-sheet">
-              <input
-                class="contact-input"
-                type="text"
-                name="NAME"
-                placeholder="Your Name"
-                required
-              />
-              <input
-                class="contact-input"
-                type="email"
-                name="EMAIL"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                class="contact-input"
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <div class="submit-btn-wrapper">
-                <button type="Submit" class="button">
-                  <span class="submit-txt">Submit</span>
-                  <div id="loader" class="lds-ring">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </button>
-              </div>
-            </form>
-            <span id="msg" class="hidden"></span>
-          </aside>
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Missions</p>
+          <h2>Flagship projects</h2>
         </div>
+        <div class="card-grid">
+          <article class="card">
+            <p class="card-kicker">Accessibility / Embedded Systems / HCI</p>
+            <h3>BVI Indoor Navigation Belt</h3>
+            <p>
+              A wearable haptic obstacle-detection belt for blind and visually
+              impaired people, using Time-of-Flight sensors, Arduino logic, and
+              vibration feedback.
+            </p>
+            <div class="tag-list">
+              <span>ToF Sensors</span>
+              <span>Arduino</span>
+              <span>Haptics</span>
+            </div>
+            <a class="button button-primary" href="missions/bvi-indoor-navigation-belt/">Open Case Study</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Speculative Intelligence / AI / Audio</p>
+            <h3>DogBridge</h3>
+            <p>
+              A human-animal communication MVP framed honestly as
+              intent-estimation from dog audio, owner context, labels, and
+              feedback.
+            </p>
+            <div class="tag-list">
+              <span>Audio</span>
+              <span>Labels</span>
+              <span>Feedback</span>
+            </div>
+            <a class="button" href="missions/">View Mission</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">AI Agents / Workflow Automation</p>
+            <h3>Support Triage + Auto Resolution Agent</h3>
+            <p>
+              A practical AI support operations app that triages and responds
+              to support issues through a multi-step agent workflow.
+            </p>
+            <div class="tag-list">
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>Agents</span>
+            </div>
+            <a class="button" href="missions/">View Mission</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block two-column">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Research Preview</p>
+            <h2>Applied research, health data, maps, and accessibility.</h2>
+            <p>
+              Current research work includes participant heartbeat data,
+              FEMA-related data workflows, peer-review support, and maintaining
+              research web infrastructure for Dr. Lavin.
+            </p>
+          </div>
+          <a class="button button-primary" href="research/">Open Research</a>
+        </div>
+        <div class="card-grid two">
+          <article class="card">
+            <p class="card-kicker">UNM Nursing</p>
+            <h3>Research Assistant</h3>
+            <p>Heartbeat devices, FEMA data, participant workflows, and paper submission support.</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Maps / GIS</p>
+            <h3>Data Dashboards</h3>
+            <p>QGIS, OpenLayers, and research dashboards for geospatial and county-level signals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Observatory</p>
+          <h2>Books, films, and ideas as cultural signals.</h2>
+          <p>
+            A future living log for notes from books, films, philosophy,
+            quantum ideas, space, robotics, Nepal, and technology in society.
+          </p>
+        </div>
+        <div class="observatory-grid">
+          <article class="card star-card">
+            <p class="card-kicker">Books</p>
+            <h3>Books I am Reading</h3>
+            <p>Short notes, quotes, and ideas that influence the lab.</p>
+          </article>
+          <article class="card star-card">
+            <p class="card-kicker">Films</p>
+            <h3>Films I Watched</h3>
+            <p>Reflections from cinema, visual systems, and speculative worlds.</p>
+          </article>
+          <article class="card star-card">
+            <p class="card-kicker">Ideas</p>
+            <h3>Ideas I am Exploring</h3>
+            <p>Space, robotics, quantum thought, consciousness, and human-centered AI.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Timeline</p>
+          <h2>Nepal -> New Mexico -> the next mission.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card"><span>2003</span><p>Born in Nepal.</p></article>
+          <article class="timeline-card"><span>2022</span><p>Came to the United States.</p></article>
+          <article class="timeline-card"><span>2025</span><p>Graduated with a B.S. in Computer Science from the University of New Mexico.</p></article>
+          <article class="timeline-card"><span>2025/26</span><p>Started M.S. in Computer Science at UNM.</p></article>
+          <article class="timeline-card"><span>Now</span><p>Research Assistant at UNM College of Nursing.</p></article>
+          <article class="timeline-card"><span>Next</span><p>Robotics, AI, space systems, and quantum-inspired computing.</p></article>
+        </div>
+      </section>
+
+      <section class="contact-cta">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Research collaboration, robotics, AI, accessibility, or internships.</h2>
+          <p>
+            Raged Lab is open to collaborations where software needs to meet
+            signals from people, sensors, maps, workflows, or machines.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="mailto:kbastola1@unm.edu">Email</a>
+            <a class="button" href="contact/">Contact Page</a>
+          </div>
+        </div>
+        <form class="contact-form" name="submit-to-google-sheet">
+          <input class="contact-input" type="text" name="NAME" placeholder="Your name" required />
+          <input class="contact-input" type="email" name="EMAIL" placeholder="Your email" required />
+          <textarea class="contact-input" name="Message" rows="6" placeholder="Your message"></textarea>
+          <button type="submit" class="button button-primary">
+            <span class="submit-txt">Send Signal</span>
+            <span id="loader" class="loader" aria-hidden="true"></span>
+          </button>
+          <span id="msg" class="hidden"></span>
+        </form>
       </section>
     </main>
-    <footer>
-      <p>© 2023 Kritim Bastola . All Rights Reserved</p>
+
+    <footer class="site-footer">
+      <p>Raged Lab / Turning signals into systems.</p>
+      <p>Built by Kritim Bastola.</p>
     </footer>
   </body>
 </html>

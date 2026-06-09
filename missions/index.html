@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Missions from Raged Lab: accessibility, AI agents, human-animal audio, and robotics experiments." />
+    <link rel="icon" href="../images/profilepic.jpeg" />
+    <title>Missions | Raged Lab</title>
+    <link rel="stylesheet" href="../globals.css" />
+    <script src="https://kit.fontawesome.com/4bc7276001.js" crossorigin="anonymous"></script>
+    <script src="../main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Raged Lab home"><span>Raged</span><span>Lab</span></a>
+      <nav aria-label="Main navigation">
+        <button class="menu-btn" type="button" aria-label="Open navigation"><i class="fa-solid fa-bars" onclick="openmenu()"></i></button>
+        <ul id="navbar">
+          <li class="close-btn"><button class="menu-btn" type="button" aria-label="Close navigation"><i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i></button></li>
+          <li><a href="../index.html" onclick="closemenu()">Home</a></li>
+          <li><a class="active" href="./" onclick="closemenu()">Missions</a></li>
+          <li><a href="../research/" onclick="closemenu()">Research</a></li>
+          <li><a href="../observatory/" onclick="closemenu()">Observatory</a></li>
+          <li><a href="../about/" onclick="closemenu()">About</a></li>
+          <li><a href="../contact/" onclick="closemenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Mission Archive</p>
+        <h1>Projects framed as systems missions.</h1>
+        <p>
+          Each mission starts with a signal and asks what kind of intelligence,
+          interface, or machine response can make that signal useful.
+        </p>
+      </section>
+
+      <section class="section-block">
+        <div class="card-grid two">
+          <article class="card">
+            <img src="../images/Qt-Designer-GUI.webp" alt="Interface screenshot representing technical prototyping" />
+            <p class="card-kicker">Accessibility / Embedded Systems / HCI</p>
+            <h2>BVI Indoor Navigation Belt</h2>
+            <p>
+              A wearable haptic obstacle-detection belt for blind and visually
+              impaired people. The prototype uses three Time-of-Flight sensors,
+              Arduino processing, MOSFET motor switching, and six vibration
+              motors to translate obstacle location into waist feedback.
+            </p>
+            <div class="tag-list">
+              <span>Time-of-Flight</span>
+              <span>Arduino</span>
+              <span>Haptic Feedback</span>
+              <span>Assistive Tech</span>
+            </div>
+            <a class="button button-primary" href="bvi-indoor-navigation-belt/">Open Case Study</a>
+          </article>
+
+          <article class="card">
+            <img src="../images/app design.jpeg" alt="Application design concept" />
+            <p class="card-kicker">Speculative Intelligence / AI / Audio</p>
+            <h2>DogBridge</h2>
+            <p>
+              A prototype for personalized dog-human communication research.
+              It is not a magical dog-to-English translator; it is framed as an
+              intent-estimation system using dog audio, owner context, labels,
+              and feedback.
+            </p>
+            <div class="tag-list">
+              <span>Audio</span>
+              <span>AI</span>
+              <span>Owner Feedback</span>
+              <span>Intent Estimation</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="../images/scheduling Website.jpeg" alt="Scheduling software interface" />
+            <p class="card-kicker">AI Agents / Workflow Automation</p>
+            <h2>Support Triage + Auto Resolution Agent</h2>
+            <p>
+              A practical support operations app using AI agents to triage and
+              respond to support issues. This mission shows applied AI system
+              building: workflow design, task routing, and response automation.
+            </p>
+            <div class="tag-list">
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>Agents</span>
+              <span>Operations</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="../images/website design.jpeg" alt="Portfolio and systems design visual" />
+            <p class="card-kicker">Autonomous Systems / Robotics</p>
+            <h2>Smart Vacuum / Robotics Experiments</h2>
+            <p>
+              Robotics and autonomous-systems experiments that support
+              Kritim's long-term direction in physical AI, sensor-driven
+              machines, and intelligent systems that act in the real world.
+            </p>
+            <div class="tag-list">
+              <span>Robotics</span>
+              <span>Autonomy</span>
+              <span>Arduino</span>
+              <span>Physical AI</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Raged Lab / Missions</p>
+      <p><a href="../index.html">Return home</a></p>
+    </footer>
+  </body>
+</html>
