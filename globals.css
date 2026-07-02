@@ -545,6 +545,24 @@ h3 {
   color: var(--muted);
 }
 
+.publication-card {
+  grid-column: span 2;
+}
+
+.publication-card h2 {
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
+}
+
+.publication-meta {
+  color: var(--ink);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.82rem;
+}
+
+.publication-links {
+  margin-top: 0;
+}
+
 .card img {
   width: 100%;
   height: 220px;
@@ -875,6 +893,10 @@ h3 {
   .card-grid.two,
   .observatory-grid {
     grid-template-columns: 1fr;
+  }
+
+  .publication-card {
+    grid-column: auto;
   }
 
   .timeline-card,
