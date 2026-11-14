@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080c10" />
+    <meta
+      name="description"
+      content="Enter Raged Lab in 3D. Explore Kritim Bastola's work in research, robotics, AI, accessibility, and GradPath."
+    />
+    <link rel="canonical" href="https://kritimbastola.com/3d/" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" type="module"></script>
+    <title>Raged Lab — A new dimension</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <header class="header">
+      <a class="brand" href="#home" aria-label="Raged Lab home"
+        ><span class="brand-symbol" aria-hidden="true">✳</span> RAGED<span
+          class="brand-light"
+          >LAB</span
+        ><span class="edition">3D</span></a
+      >
+      <nav class="nav" id="navigation" aria-label="Main navigation">
+        <a href="#missions">Missions</a><a href="#research">Research</a
+        ><a href="#about">Trajectory</a><a href="#observatory">Observatory</a
+        ><a href="#contact">Contact</a>
+      </nav>
+      <a class="classic-link" href="../"
+        >Classic site <span aria-hidden="true">↗</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="Open navigation"
+      >
+        Menu <span aria-hidden="true">+</span>
+      </button>
+    </header>
+    <main id="main">
+      <section
+        class="hero section-shell"
+        id="home"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Independent curiosity. Connected
+            systems.
+          </p>
+          <h1 id="hero-title">Turning signals<br />into <em>systems.</em></h1>
+          <p class="hero-intro">
+            I’m Kritim Bastola. Researcher, builder, and explorer of the space
+            between intelligence and the physical world.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#missions"
+              >Explore the lab <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="#about"
+              >Meet the builder <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="hero-note">
+            <span class="tiny-cross" aria-hidden="true">+</span
+            ><span
+              >M.S. Computer Science · University of New Mexico<br />Robotics /
+              AI / Accessibility / Research</span
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div
+            class="scene-surface hero-scene"
+            id="hero-scene"
+            role="img"
+            aria-label="Interactive 3D orbital instrument representing signals becoming systems"
+          >
+            <div class="orb-fallback" aria-hidden="true">
+              <i></i><i></i><i></i><b></b>
+            </div>
+          </div>
+          <div class="scene-label label-top">
+            <span class="status-dot"></span> SIGNAL CORE
+            <span class="fine-text">/ 001</span>
+          </div>
+          <div class="scene-label label-bottom">
+            <span aria-hidden="true">⤧</span>
+            <span class="scene-hint">Drag to rotate · scroll to explore</span>
+          </div>
+          <div class="scene-controls">
+            <button
+              class="icon-button"
+              id="reset-scene"
+              aria-label="Reset 3D view"
+              title="Reset 3D view"
+            >
+              ↺</button
+            ><button
+              class="motion-button"
+              id="motion-toggle"
+              aria-pressed="false"
+            >
+              Pause motion <span aria-hidden="true">Ⅱ</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero-footer">
+          <a href="#missions" class="scroll-prompt"
+            ><span aria-hidden="true">↓</span> Scroll to discover</a
+          >
+          <p>
+            <span>01 / SENSE</span><span>02 / REASON</span><span>03 / ACT</span>
+          </p>
+          <span class="fine-text">A FIELD GUIDE IN THREE DIMENSIONS</span>
+        </div>
+      </section>
+
+      <section
+        class="section-shell missions"
+        id="missions"
+        aria-labelledby="missions-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow"><span>01</span> / Mission control</p>
+          <div class="heading-row">
+            <h2 id="missions-title">
+              Different signals.<br /><em>Shared curiosity.</em>
+            </h2>
+            <p>
+              From a tactile interface to a research connection. Select a
+              mission to explore the system behind it.
+            </p>
+          </div>
+        </div>
+        <div class="mission-tabs" role="tablist" aria-label="Choose a project">
+          <button
+            role="tab"
+            id="tab-gradpath"
+            aria-controls="mission-panel"
+            aria-selected="true"
+            data-mission="gradpath"
+          >
+            <span>01</span> GradPath
+            <i class="new-dot" aria-label="In development"></i>
+          </button>
+          <button
+            role="tab"
+            id="tab-bvi"
+            aria-controls="mission-panel"
+            aria-selected="false"
+            tabindex="-1"
+            data-mission="bvi"
+          >
+            <span>02</span> BVI Belt
+          </button>
+          <button
+            role="tab"
+            id="tab-dogbridge"
+            aria-controls="mission-panel"
+            aria-selected="false"
+            tabindex="-1"
+            data-mission="dogbridge"
+          >
+            <span>03</span> DogBridge
+          </button>
+          <button
+            role="tab"
+            id="tab-triage"
+            aria-controls="mission-panel"
+            aria-selected="false"
+            tabindex="-1"
+            data-mission="triage"
+          >
+            <span>04</span> Support Triage
+          </button>
+          <button
+            role="tab"
+            id="tab-robotics"
+            aria-controls="mission-panel"
+            aria-selected="false"
+            tabindex="-1"
+            data-mission="robotics"
+          >
+            <span>05</span> Robotics
+          </button>
+        </div>
+        <div
+          class="mission-panel"
+          id="mission-panel"
+          role="tabpanel"
+          aria-labelledby="tab-gradpath"
+          tabindex="0"
+        >
+          <div class="mission-visual">
+            <span class="model-corner"
+              >FIG. <span id="model-number">01</span> /
+              <span id="model-name">CONNECTION NETWORK</span></span
+            >
+            <div
+              class="scene-surface project-scene"
+              id="project-scene"
+              role="img"
+              aria-label="3D concept visualization of a research connection network"
+            >
+              <div class="orb-fallback small" aria-hidden="true">
+                <i></i><i></i><b></b>
+              </div>
+            </div>
+            <span class="model-caption"
+              >Concept visualization <span>Drag to rotate ↔</span></span
+            >
+          </div>
+          <div class="mission-copy">
+            <p class="eyebrow" id="mission-category">
+              Research discovery / Collaboration
+            </p>
+            <div class="mission-title-row">
+              <h3 id="mission-title">GradPath</h3>
+              <span class="status-badge" id="mission-status"
+                >In development</span
+              >
+            </div>
+            <p class="mission-description" id="mission-description">
+              We are building GradPath, a research discovery and collaboration
+              prototype for the UNM/CNM App Contest. A place for students to
+              find a direction, develop an idea, and connect with researchers.
+            </p>
+            <ul class="mission-features" id="mission-features">
+              <li>Explore research ideas and real papers through OpenAlex.</li>
+              <li>Discover researchers and potential student collaborators.</li>
+              <li>Try browser-based research requests and conversations.</li>
+            </ul>
+            <div class="tags" id="mission-tags">
+              <span>OpenAlex</span><span>Research planning</span
+              ><span>Student + faculty</span>
+            </div>
+            <div class="actions" id="mission-actions">
+              <a
+                class="button primary"
+                href="https://kritim-123.github.io/gradpath/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Try GradPath <span aria-hidden="true">↗</span></a
+              ><a
+                class="text-link"
+                href="https://github.com/Kritim-123/gradpath"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View source ↗</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="section-footnote">
+          Five experiments in one continuous loop: sense the world, reason about
+          it, respond meaningfully.
+        </p>
+        <noscript
+          ><p class="notice">
+            Interactive models require JavaScript. All project descriptions are
+            available in the <a href="../missions/">classic mission archive</a>.
+          </p></noscript
+        >
+      </section>
+
+      <section
+        class="section-shell research"
+        id="research"
+        aria-labelledby="research-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow"><span>02</span> / Research log</p>
+          <div class="heading-row">
+            <h2 id="research-title">
+              Grounded in data.<br /><em>Built for people.</em>
+            </h2>
+            <p>
+              Research Assistant at UNM College of Nursing, working under Dr.
+              Lavin at the intersection of health, data, and technology.
+            </p>
+          </div>
+        </div>
+        <article class="publication depth-card" data-tilt>
+          <div class="publication-art" aria-hidden="true">
+            <div class="data-plane plane-one"></div>
+            <div class="data-plane plane-two"></div>
+            <div class="data-plane plane-three"></div>
+            <span class="data-axis">1989 — 2019</span
+            ><span class="data-caption">CONCEPTUAL RESEARCH LANDSCAPE</span>
+          </div>
+          <div class="publication-copy">
+            <p class="eyebrow">
+              <span class="status-dot"></span> Released preprint · June 2026
+            </p>
+            <h3>Trends in FEMA-Declared Weather-Related Disasters</h3>
+            <p>
+              Co-authored research on weather-related disasters and their
+              implications for healthcare preparedness, health equity, and
+              extreme weather resilience.
+            </p>
+            <span class="doi">DOI / 10.20944/preprints202606.1450.v1</span
+            ><a
+              class="text-link"
+              href="https://www.preprints.org/manuscript/202606.1450"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read the preprint <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </article>
+        <div class="research-lines">
+          <article>
+            <span class="line-number">A</span>
+            <div>
+              <h3>Human signals</h3>
+              <p>
+                Heartbeat signal collection, participant data workflows, and
+                research support.
+              </p>
+            </div>
+            <span class="line-symbol" aria-hidden="true">⌁</span>
+          </article>
+          <article>
+            <span class="line-number">B</span>
+            <div>
+              <h3>Geographic intelligence</h3>
+              <p>
+                FEMA data, QGIS, OpenLayers, and dashboards that make geographic
+                signals readable.
+              </p>
+            </div>
+            <span class="line-symbol" aria-hidden="true">⌖</span>
+          </article>
+          <article>
+            <span class="line-number">C</span>
+            <div>
+              <h3>Embodied interaction</h3>
+              <p>
+                Haptic feedback, embedded sensing, assistive design, and the
+                direction of physical AI.
+              </p>
+            </div>
+            <span class="line-symbol" aria-hidden="true">◎</span>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section-shell about"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow"><span>03</span> / The builder</p>
+        </div>
+        <div class="about-grid">
+          <div class="portrait-stack depth-card" data-tilt>
+            <div class="portrait-back" aria-hidden="true"></div>
+            <img
+              src="../images/profile.jpg"
+              alt="Kritim Bastola in graduation regalia"
+              loading="lazy"
+              width="800"
+              height="1000"
+            />
+            <div class="portrait-caption">
+              <span>KRITIM BASTOLA</span><span>NEPAL → NEW MEXICO</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <h2 id="about-title">
+              Curiosity has<br /><em>no fixed orbit.</em>
+            </h2>
+            <p>
+              I’m Kritim, originally from Nepal and now a Master’s student in
+              Computer Science at the University of New Mexico. I build at the
+              intersection of research, software, robotics, and human-centered
+              technology.
+            </p>
+            <p>
+              I’m drawn to systems that connect software with something real: a
+              person, a sensor, a map, or a machine. Beyond the lab, that
+              curiosity follows books, films, space, and questions about
+              intelligence.
+            </p>
+            <div class="actions">
+              <a class="button" href="../Kritim_Bastola_Resume.pdf" download
+                >Download résumé <span aria-hidden="true">↓</span></a
+              ><a
+                class="text-link"
+                href="https://orcid.org/0009-0006-8295-1847"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ORCID ↗</a
+              >
+            </div>
+          </div>
+        </div>
+        <ol class="trajectory">
+          <li>
+            <span>2022</span>
+            <h3>A new horizon</h3>
+            <p>Nepal → United States.</p>
+          </li>
+          <li>
+            <span>2025</span>
+            <h3>A foundation</h3>
+            <p>B.S. Computer Science, UNM.</p>
+          </li>
+          <li>
+            <span>NOW</span>
+            <h3>Going deeper</h3>
+            <p>M.S. Computer Science &amp; research at UNM.</p>
+          </li>
+          <li>
+            <span>NEXT</span>
+            <h3>Beyond the screen</h3>
+            <p>Robotics, AI, and space systems.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section
+        class="section-shell observatory"
+        id="observatory"
+        aria-labelledby="observatory-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow"><span>04</span> / The observatory</p>
+          <div class="heading-row">
+            <h2 id="observatory-title">
+              Off the clock.<br /><em>Still looking up.</em>
+            </h2>
+            <p>
+              A future log of the books, films, and ideas that shape the work.
+              For now, a few directions of curiosity.
+            </p>
+          </div>
+        </div>
+        <div class="observatory-grid">
+          <details class="thought-card depth-card" data-tilt>
+            <summary>
+              <div class="thought-art book-art" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+              <span class="eyebrow">01 / Books</span>
+              <h3>Other minds.<br />New perspectives.</h3>
+              <span class="thought-action"
+                >Explore interests <b aria-hidden="true">+</b></span
+              >
+            </summary>
+            <p>
+              Technology, society, consciousness, and the human systems that
+              surround the machines we build. Reading notes are coming later.
+            </p>
+          </details>
+          <details class="thought-card depth-card" data-tilt>
+            <summary>
+              <div class="thought-art film-art" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+              <span class="eyebrow">02 / Films</span>
+              <h3>Imagined worlds.<br />Real questions.</h3>
+              <span class="thought-action"
+                >Explore interests <b aria-hidden="true">+</b></span
+              >
+            </summary>
+            <p>
+              Speculative worlds, visual storytelling, machines, and people. A
+              personal film log is planned; no entries have been published yet.
+            </p>
+          </details>
+          <details class="thought-card depth-card" data-tilt>
+            <summary>
+              <div class="thought-art idea-art" aria-hidden="true">
+                <i></i><i></i><i></i><b></b>
+              </div>
+              <span class="eyebrow">03 / Ideas</span>
+              <h3>Open questions.<br />Unfixed answers.</h3>
+              <span class="thought-action"
+                >Explore interests <b aria-hidden="true">+</b></span
+              >
+            </summary>
+            <p>
+              Space, robotics, quantum ideas, AI, consciousness, Nepal,
+              accessibility, and technology in society.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section
+        class="section-shell contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <p class="eyebrow">
+          <span class="status-dot"></span> Open to collaboration
+        </p>
+        <div class="contact-orbits" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </div>
+        <h2 id="contact-title">Let’s make<br /><em>something matter.</em></h2>
+        <p>
+          Research, robotics, AI, accessibility, or an idea that doesn’t quite
+          fit a category. Send a signal.
+        </p>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:kbastola1@unm.edu"
+            >kbastola1@unm.edu <span aria-hidden="true">↗</span></a
+          ><button class="copy-email" id="copy-email">Copy email</button
+          ><span class="sr-only" id="copy-status" role="status"></span>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://github.com/Kritim-123"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          ><a
+            href="https://www.linkedin.com/in/kritim-bastola-488563202/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          ><a
+            href="https://orcid.org/0009-0006-8295-1847"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ORCID ↗</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer section-shell">
+      <a class="brand" href="#home"
+        ><span class="brand-symbol" aria-hidden="true">✳</span> RAGED<span
+          class="brand-light"
+          >LAB</span
+        ></a
+      >
+      <p>Built by Kritim Bastola. Driven by curiosity.</p>
+      <a href="../">Return to classic site ↗</a>
+    </footer>
+    <dialog id="mission-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" aria-label="Close mission details">
+        Close ×
+      </button>
+      <p class="eyebrow">Mission notes / Accessibility</p>
+      <h2 id="dialog-title">BVI Indoor Navigation Belt</h2>
+      <p>
+        Indoor navigation needs fast, private, body-level feedback. This
+        wearable prototype turns obstacle distance into directional vibration
+        around the waist.
+      </p>
+      <h3>The signal loop</h3>
+      <p>
+        Three Time-of-Flight sensors measure left, center, and right obstacle
+        distance. An Arduino applies threshold logic; a MOSFET driver switches
+        six vibration motors. Left or right obstacles trigger the corresponding
+        side. Center obstacles trigger both.
+      </p>
+      <h3>Current prototype</h3>
+      <p>
+        The sensing-to-vibration pipeline demonstrates the core feedback loop.
+        It is not yet field-ready: wiring, motor placement, comfort, and
+        physical integration need further work.
+      </p>
+      <h3>Next steps</h3>
+      <p>
+        A 3D-printed enclosure, rechargeable battery, stable motor pockets,
+        adjustable distance thresholds, and carefully planned formal evaluation
+        with BVI participants.
+      </p>
+      <a class="text-link" href="../missions/bvi-indoor-navigation-belt/"
+        >Read the original case study ↗</a
+      >
+    </dialog>
+  </body>
+</html>
