@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Raged Lab is the research-lab portfolio of Kritim Bastola, a UNM Master's student building systems across robotics, AI, accessibility, research software, and human-centered technology."
+    />
+    <link rel="icon" href="/images/profile.jpg" />
+    <title>Raged Lab | Turning signals into systems</title>
+    <link rel="stylesheet" href="globals.css?v=rocket-20260611" />
+    <script src="https://kit.fontawesome.com/4bc7276001.js" crossorigin="anonymous"></script>
+    <script src="main.js?v=rocket-20260611" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Raged Lab home">
+        <span>Raged</span>
+        <span>Lab</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <button class="menu-btn" type="button" aria-label="Open navigation">
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </button>
+        <ul id="navbar">
+          <li class="close-btn">
+            <button class="menu-btn" type="button" aria-label="Close navigation">
+              <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </button>
+          </li>
+          <li><a class="active" href="index.html" onclick="closemenu()">Home</a></li>
+          <li><a href="missions/" onclick="closemenu()">Missions</a></li>
+          <li><a href="research/" onclick="closemenu()">Research</a></li>
+          <li><a href="observatory/" onclick="closemenu()">Observatory</a></li>
+          <li><a href="about/" onclick="closemenu()">About</a></li>
+          <li><a href="contact/" onclick="closemenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Raged Lab / Signal -> Intelligence -> Action</p>
+          <h1>I build systems that sense the world and respond intelligently.</h1>
+          <p class="lede">
+            I am Kritim Bastola, a Master's student in Computer Science at the
+            University of New Mexico, originally from Nepal. I work at the
+            intersection of research, software, robotics, accessibility, and
+            human-centered technology.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="missions/">View Missions</a>
+            <a class="button" href="research/">Read Research Log</a>
+            <a class="button" href="https://github.com/Kritim-123?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-red" href="/Kritim_Bastola_Resume.pdf" download>Resume</a>
+          </div>
+        </div>
+
+        <aside class="mission-console" aria-label="Current mission console">
+          <div class="portrait-frame">
+            <img src="/images/profile.jpg" alt="Kritim Bastola in graduation regalia" />
+          </div>
+          <div class="console-readout">
+            <div class="readout-row">
+              <span>Callsign</span>
+              <span>Kritim Bastola</span>
+            </div>
+            <div class="readout-row">
+              <span>Role</span>
+              <span>Research Assistant, UNM College of Nursing</span>
+            </div>
+            <div class="readout-row">
+              <span>Vector</span>
+              <span>Robotics / AI / Accessibility / Space Systems</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-block two-column">
+        <div class="status-panel">
+          <p class="eyebrow">Current Status</p>
+          <h2>Researcher-builder in orbit.</h2>
+          <div class="status-grid">
+            <article>
+              <span>Current Role</span>
+              <strong>Research Assistant, UNM College of Nursing</strong>
+            </article>
+            <article>
+              <span>Education</span>
+              <strong>M.S. Computer Science, University of New Mexico</strong>
+            </article>
+            <article>
+              <span>Origin</span>
+              <strong>Nepal -> New Mexico</strong>
+            </article>
+            <article>
+              <span>Building</span>
+              <strong>Intelligent systems that connect software with the physical world</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="signal-feed">
+          <p class="eyebrow">Signal Feed</p>
+          <h2>Live threads from the lab.</h2>
+          <ul class="feed-list">
+            <li><a href="missions/#gradpath">[GRADPATH] we are building a research discovery and collaboration app</a></li>
+            <li>[PREPRINT] FEMA weather-disaster paper posted on Preprints.org</li>
+            <li>[HRV DATA] collecting participant heartbeat signals</li>
+            <li>[HAPTICS] obstacle detection belt prototype</li>
+            <li>[AI AGENTS] support triage automation</li>
+            <li>[ANIMAL AUDIO] dog-human communication MVP</li>
+            <li>[ROBOTICS] humanoid + autonomous systems research</li>
+            <li>[CULTURE] books, films, ideas, philosophy</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Mission Map</p>
+          <h2>Major systems connected by one pattern: sense, reason, act.</h2>
+          <p>
+            Raged Lab is organized around missions instead of a standard
+            project grid. Each mission explores a signal: biological,
+            environmental, audio, support-workflow, or robotic.
+          </p>
+        </div>
+        <div class="mission-map" aria-label="Project constellation">
+          <a class="orbit-node node-one" href="missions/bvi-indoor-navigation-belt/">
+            <span>Accessibility</span>
+            <strong>BVI Navigation Belt</strong>
+          </a>
+          <a class="orbit-node node-two" href="missions/">
+            <span>AI / Audio</span>
+            <strong>DogBridge</strong>
+          </a>
+          <a class="orbit-node node-three" href="missions/">
+            <span>AI Agents</span>
+            <strong>Support Triage</strong>
+          </a>
+          <a class="orbit-node node-four" href="missions/">
+            <span>Robotics</span>
+            <strong>Autonomous Systems</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Missions</p>
+          <h2>Flagship projects</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <p class="card-kicker">Accessibility / Embedded Systems / HCI</p>
+            <h3>BVI Indoor Navigation Belt</h3>
+            <p>
+              A wearable haptic obstacle-detection belt for blind and visually
+              impaired people, using Time-of-Flight sensors, Arduino logic, and
+              vibration feedback.
+            </p>
+            <div class="tag-list">
+              <span>ToF Sensors</span>
+              <span>Arduino</span>
+              <span>Haptics</span>
+            </div>
+            <a class="button button-primary" href="missions/bvi-indoor-navigation-belt/">Open Case Study</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Speculative Intelligence / AI / Audio</p>
+            <h3>DogBridge</h3>
+            <p>
+              A human-animal communication MVP framed honestly as
+              intent-estimation from dog audio, owner context, labels, and
+              feedback.
+            </p>
+            <div class="tag-list">
+              <span>Audio</span>
+              <span>Labels</span>
+              <span>Feedback</span>
+            </div>
+            <a class="button" href="missions/">View Mission</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">AI Agents / Workflow Automation</p>
+            <h3>Support Triage + Auto Resolution Agent</h3>
+            <p>
+              A practical AI support operations app that triages and responds
+              to support issues through a multi-step agent workflow.
+            </p>
+            <div class="tag-list">
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>Agents</span>
+            </div>
+            <a class="button" href="missions/">View Mission</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block two-column">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Research Preview</p>
+            <h2>Applied research, health data, maps, and accessibility.</h2>
+            <p>
+              Current research work includes participant heartbeat data,
+              FEMA-related data workflows, peer-review support, and maintaining
+              research web infrastructure for Dr. Lavin.
+            </p>
+          </div>
+          <a class="button button-primary" href="research/">Open Research</a>
+        </div>
+        <div class="card-grid two">
+          <article class="card">
+            <p class="card-kicker">UNM Nursing</p>
+            <h3>Research Assistant</h3>
+            <p>Heartbeat devices, FEMA data, participant workflows, and a released FEMA weather-disaster preprint.</p>
+            <a class="button" href="https://www.preprints.org/manuscript/202606.1450" target="_blank" rel="noreferrer">Read Preprint</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Maps / GIS</p>
+            <h3>Data Dashboards</h3>
+            <p>QGIS, OpenLayers, and research dashboards for geospatial and county-level signals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Observatory</p>
+          <h2>Books, films, and ideas as cultural signals.</h2>
+          <p>
+            A future living log for notes from books, films, philosophy,
+            quantum ideas, space, robotics, Nepal, and technology in society.
+          </p>
+        </div>
+        <div class="observatory-grid">
+          <article class="card star-card">
+            <p class="card-kicker">Books</p>
+            <h3>Books I am Reading</h3>
+            <p>Short notes, quotes, and ideas that influence the lab.</p>
+          </article>
+          <article class="card star-card">
+            <p class="card-kicker">Films</p>
+            <h3>Films I Watched</h3>
+            <p>Reflections from cinema, visual systems, and speculative worlds.</p>
+          </article>
+          <article class="card star-card">
+            <p class="card-kicker">Ideas</p>
+            <h3>Ideas I am Exploring</h3>
+            <p>Space, robotics, quantum thought, consciousness, and human-centered AI.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Timeline</p>
+          <h2>Nepal -> New Mexico -> the next mission.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card"><span>2003</span><p>Born in Nepal.</p></article>
+          <article class="timeline-card"><span>2022</span><p>Came to the United States.</p></article>
+          <article class="timeline-card"><span>2025</span><p>Graduated with a B.S. in Computer Science from the University of New Mexico.</p></article>
+          <article class="timeline-card"><span>2025/26</span><p>Started M.S. in Computer Science at UNM.</p></article>
+          <article class="timeline-card"><span>Now</span><p>Research Assistant at UNM College of Nursing.</p></article>
+          <article class="timeline-card"><span>Next</span><p>Robotics, AI, space systems, and quantum-inspired computing.</p></article>
+        </div>
+      </section>
+
+      <section class="contact-cta">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Research collaboration, robotics, AI, accessibility, or internships.</h2>
+          <p>
+            Raged Lab is open to collaborations where software needs to meet
+            signals from people, sensors, maps, workflows, or machines.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="mailto:kbastola1@unm.edu">Email</a>
+            <a class="button" href="contact/">Contact Page</a>
+          </div>
+        </div>
+        <form class="contact-form" name="submit-to-google-sheet">
+          <input class="contact-input" type="text" name="NAME" placeholder="Your name" required />
+          <input class="contact-input" type="email" name="EMAIL" placeholder="Your email" required />
+          <textarea class="contact-input" name="Message" rows="6" placeholder="Your message"></textarea>
+          <button type="submit" class="button button-primary">
+            <span class="submit-txt">Send Signal</span>
+            <span id="loader" class="loader" aria-hidden="true"></span>
+          </button>
+          <span id="msg" class="hidden"></span>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Raged Lab / Turning signals into systems.</p>
+      <p>Built by Kritim Bastola.</p>
+    </footer>
+  </body>
+</html>
